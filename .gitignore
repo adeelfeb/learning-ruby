@@ -1,0 +1,77 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Rails log files and temporary files
+/log/*.log
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Bundler and Ruby environment
+/.bundle
+/vendor/bundle
+/vendor/cache
+/vendor/ruby
+*.gem
+*.rbc
+.byebug_history
+.irb_history
+.pry_history
+
+# Environment configuration and secrets
+/.env*
+/config/master.key
+/config/credentials.yml.enc # Keep this if you use encrypted credentials and share the key securely (uncomment to ignore)
+/config/database.yml        # Typically ignored for local dev setup
+
+# Database files
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/seeds.rb # if you populate your development DB with sensitive data
+
+# Uploads and ActiveStorage
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/.keep
+
+# Compiled assets
+/public/assets
+/public/packs
+/public/dist
+
+# Node.js and JavaScript dependencies (if using Webpacker/Vite/JS bundling)
+/node_modules/
+/yarn-error.log
+/pids/*.pid
+
+# Docker files (if you have local build artifacts or ignored volumes)
+# If your Dockerfile and docker-compose.yml are meant to be versioned, remove these.
+# If you have specific local Docker volumes or build contexts you want to ignore, add them here.
+.dockerignore # Often included in .dockerignore itself, but good to ensure it's not tracked by git
+/docker-compose.override.yml # For local override settings
+/data/ # Example: if Docker volumes mount data here for local dev
+/build/ # Example: if Docker builds generate local output
+
+# Solid Queue and Solid Cache (if using these gems, they create temp files)
+/tmp/solid_cache
+/tmp/solid_queue
+
+# IDE and Editor Specific Files
+.idea/         # RubyMine/IntelliJ IDEA project files
+.vscode/       # VS Code specific files (adjust if you share some workspace settings)
+*.swp
+*.swo
+*.bak
+*.orig
+*~
+.sass-cache/
+
+# OS generated files
+.DS_Store
+.localized
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Misc
+.yarn-integrity # Yarn cache integrity file
