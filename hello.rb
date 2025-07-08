@@ -1,0 +1,6 @@
+puts "Hello world!"
+puts "This is a Ruby script."
+puts "It prints a simple message to the console.Goodbye!"
+puts "This is the end of the script."
+puts "Have a great day!"
+puts "Thank you for running this script."
