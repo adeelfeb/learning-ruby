@@ -1,2 +1,28 @@
-<h1>Welcome#home</h1>
+<h1>Welcome to our Application!</h1>
 <p>Find me in app/views/welcome/home.html.erb</p>
+
+<hr>
+
+<h2>Greeting:</h2>
+<p><%= @greeting %></p>
+
+<h2>Current Time:</h2>
+<p><%= @current_time %></p>
+
+<h2>Features:</h2>
+<ul>
+  <% @features.each do |feature| %>
+    <li><%= feature %></li>
+  <% end %>
+</ul>
+
+<h2>About Info:</h2>
+<p><%= @about_info %></p>
+
+<h2>Contact Info:</h2>
+<p><%= @contact_info %> contact@example.com</p>
+<hr>
+
+<p>
+  This content is loaded from the `WelcomeController`'s `home` action.
+</p>

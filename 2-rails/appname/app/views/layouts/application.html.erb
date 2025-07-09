@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= content_for(:title) || "Appname" %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Your Application</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= yield :head %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+  <style>
+    /* Basic styling for flash messages - you'd typically put this in application.css */
+    .flash-messages {
+      margin: 15px 0;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .flash-messages.notice {
+      background-color: #d4edda; /* Light green */
+      color: #155724; /* Dark green */
+      border: 1px solid #c3e6cb;
+    }
+    .flash-messages.alert {
+      background-color: #f8d7da; /* Light red */
+      color: #721c24; /* Dark red */
+      border: 1px solid #f5c6cb;
+    }
+    /* Add more styles for other flash keys like success, error, info if you use them */
+    .flash-messages.success {
+      background-color: #d1ecf1; /* Light blue */
+      color: #0c5460; /* Dark blue */
+      border: 1px solid #bee5eb;
+    }
+  </style>
+</head>
+<body>
 
-    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
-    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+  <%# Iterate through each flash message and display it %>
+  <% flash.each do |key, value| %>
+    <div class="flash-messages <%= key %>">
+      <%= value %>
+    </div>
+  <% end %>
 
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
-
-    <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+  <%= yield %>
+</body>
 </html>

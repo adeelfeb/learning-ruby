@@ -705,3 +705,447 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 17ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/welcom/home" for 127.0.0.1 at 2025-07-09 16:33:58 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/welcom/home"):
+  
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 16:34:06 +0500
+Processing by WelcomeController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 8.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 16:48:23 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by WelcomeController#features as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/features.html.erb within layouts/application
+  Rendered welcome/features.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 9.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2025-07-09 16:50:06 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+Started GET "/home" for 127.0.0.1 at 2025-07-09 16:50:10 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 16:50:13 +0500
+  
+SyntaxError (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/controllers/welcome_controller.rb:12: syntax error, unexpected local variable or method, expecting `end' or dummy end
+    render "home"
+            ^~~~
+):
+  
+app/controllers/welcome_controller.rb:12: syntax error, unexpected local variable or method, expecting `end' or dummy end
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 16:50:37 +0500
+  
+SyntaxError (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/controllers/welcome_controller.rb:12: syntax error, unexpected local variable or method, expecting `end' or dummy end
+    render "welcome/home"
+            ^~~~~~~
+):
+  
+app/controllers/welcome_controller.rb:12: syntax error, unexpected local variable or method, expecting `end' or dummy end
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 16:51:46 +0500
+Processing by WelcomeController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.5ms)
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 16:54:06 +0500
+Processing by WelcomeController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.1ms)
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 17:11:37 +0500
+Processing by WelcomeController#home as HTML
+Error rendering home page: undefined local variable or method `check_variable' for #<WelcomeController:0x00000000020a30>
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 7ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 17:11:42 +0500
+Processing by WelcomeController#home as HTML
+Error rendering home page: undefined local variable or method `check_variable' for #<WelcomeController:0x00000000020aa8>
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 6ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 17:11:58 +0500
+Processing by WelcomeController#home as HTML
+Rendering home page with greeting: Welcome to our application! at 2025-07-09 17:11:58 +0500
+Features available: ["Feature 1", "Feature 2", "Feature 3"]
+This is a warning message for the home page rendering.
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 17:12:22 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by WelcomeController#home as HTML
+Rendering home page with greeting: Welcome to our application! at 2025-07-09 17:12:22 +0500
+Features available: ["Feature 1", "Feature 2", "Feature 3"]
+This is a warning message for the home page rendering.
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 11.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-09 17:12:28 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/assets/stimulus.min-2395e199.js.map" for 127.0.0.1 at 2025-07-09 17:12:28 +0500
+Started GET "/assets/turbo.min-5f3b7fda.js.map" for 127.0.0.1 at 2025-07-09 17:12:28 +0500
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 17:13:18 +0500
+Processing by WelcomeController#home as HTML
+>>>>>>>>>>>>Rendering home page with greeting: Welcome to our application! at 2025-07-09 17:13:18 +0500
+Features available: ["Feature 1", "Feature 2", "Feature 3"]
+This is a warning message for the home page rendering.
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.1ms)
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-09 17:13:18 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 17:14:42 +0500
+Processing by WelcomeController#home as HTML
+>>>>>>>>>>>>Rendering home page with greeting: Welcome to our application! at 2025-07-09 17:14:42 +0500
+>>>>>>>>>>>>>>>Features available: ["Feature 1", "Feature 2", "Feature 3"]
+>>>>>>>>>>>>>>This is a warning message for the home page rendering.
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-09 17:14:42 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 17:14:59 +0500
+Processing by WelcomeController#home as HTML
+>>>>>>>>>>>>Rendering home page with greeting: Welcome to our application! at 2025-07-09 17:14:59 +0500
+>>>>>>>>>>>>>>>Features available: ["Feature 1", "Feature 2", "Feature 3"]
+>>>>>>>>>>>>>>Warning message for the home page rendering.
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.2ms)
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-09 17:14:59 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/welcome/home" for 127.0.0.1 at 2025-07-09 17:53:38 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by WelcomeController#home as HTML
+>>>>>>>>>>>>Rendering home page with greeting: Welcome to our application! at 2025-07-09 17:53:38 +0500
+>>>>>>>>>>>>>>>Features available: ["Feature 1", "Feature 2", "Feature 3"]
+>>>>>>>>>>>>>>Warning message for the home page rendering.
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 10.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 17:53:43 +0500
+Processing by WelcomeController#features as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `root_path' for #<WelcomeController:0x0000000000c968>):
+  
+app/controllers/welcome_controller.rb:36:in `features'
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 17:54:09 +0500
+Processing by WelcomeController#features as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `root_url' for #<WelcomeController:0x00000000010ae0>):
+  
+app/controllers/welcome_controller.rb:36:in `features'
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 17:54:15 +0500
+Processing by WelcomeController#features as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `root' for #<WelcomeController:0x00000000014b68>):
+  
+app/controllers/welcome_controller.rb:36:in `features'
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 17:55:40 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by WelcomeController#features as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `rails_health_check' for #<WelcomeController:0x0000000000c828>):
+  
+app/controllers/welcome_controller.rb:36:in `features'
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 17:56:26 +0500
+Processing by WelcomeController#features as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `rails_about' for #<WelcomeController:0x00000000010a18>):
+  
+app/controllers/welcome_controller.rb:36:in `features'
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 17:56:52 +0500
+Processing by WelcomeController#features as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `welcome_about' for #<WelcomeController:0x00000000014ac8>):
+  
+app/controllers/welcome_controller.rb:36:in `features'
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 17:59:50 +0500
+Processing by WelcomeController#features as HTML
+Redirected to http://127.0.0.1:3000/welcome/about
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 17:59:50 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:08:33 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.2ms)
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 18:08:42 +0500
+Processing by WelcomeController#features as HTML
+Redirected to http://127.0.0.1:3000/welcome/about
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:08:42 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 18:08:46 +0500
+Processing by WelcomeController#features as HTML
+Redirected to http://127.0.0.1:3000/welcome/about
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:08:46 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.2ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.4ms)
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:09:24 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.7ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Welcome#about</h1>
+<p>Find me in app/views/welcome/about.html.erb</p>
+<%= if flash[:notice] %>
+  <div class="alert alert-info">
+    <%= flash[:notice] %>
+  </div>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/welcome/about.html.erb:3: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...er.append=( if flash[:notice] ); @output_buffer.safe_append='
+...                              ^
+/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/welcome/about.html.erb:8: syntax error, unexpected end-of-input
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Welcome#about</h1>
+<p>Find me in app/views/welcome/about.html.erb</p>
+<%= if flash[:notice] %>
+  <div class="alert alert-info">
+    <%= flash[:notice] %>
+  </div>
+):
+1:    <h1>Welcome#about</h1>
+2:    <p>Find me in app/views/welcome/about.html.erb</p>
+3:    <%= if flash[:notice] %>
+4:      <div class="alert alert-info">
+5:        <%= flash[:notice] %>
+6:      </div>
+  
+app/views/welcome/about.html.erb:3: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/welcome/about.html.erb:8: syntax error, unexpected end-of-input
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/welcome/about.html.erb:3: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...er.append=( if flash[:notice] ); @output_buffer.safe_append='
+...                              ^
+/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/welcome/about.html.erb:8: syntax error, unexpected end-of-input
+          end
+             ^
+):
+  
+app/views/welcome/about.html.erb:3: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/welcome/about.html.erb:8: syntax error, unexpected end-of-input
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:10:10 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Welcome#about</h1>
+<p>Find me in app/views/welcome/about.html.erb</p>
+<%= if flash[:notice] %>
+  <div class="alert alert-info">
+    <%= flash[:notice] %>
+  </div>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/welcome/about.html.erb:3: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...er.append=( if flash[:notice] ); @output_buffer.safe_append='
+...                              ^
+/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/welcome/about.html.erb:8: syntax error, unexpected end-of-input
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Welcome#about</h1>
+<p>Find me in app/views/welcome/about.html.erb</p>
+<%= if flash[:notice] %>
+  <div class="alert alert-info">
+    <%= flash[:notice] %>
+  </div>
+):
+1:    <h1>Welcome#about</h1>
+2:    <p>Find me in app/views/welcome/about.html.erb</p>
+3:    <%= if flash[:notice] %>
+4:      <div class="alert alert-info">
+5:        <%= flash[:notice] %>
+6:      </div>
+  
+app/views/welcome/about.html.erb:3: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/welcome/about.html.erb:8: syntax error, unexpected end-of-input
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/welcome/about.html.erb:3: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...er.append=( if flash[:notice] ); @output_buffer.safe_append='
+...                              ^
+/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/welcome/about.html.erb:8: syntax error, unexpected end-of-input
+          end
+             ^
+):
+  
+app/views/welcome/about.html.erb:3: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/welcome/about.html.erb:8: syntax error, unexpected end-of-input
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:11:14 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:11:21 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 18:11:23 +0500
+Processing by WelcomeController#features as HTML
+Redirected to http://127.0.0.1:3000/welcome/about
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:11:23 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:13:59 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-09 18:14:01 +0500
+Processing by WelcomeController#features as HTML
+Redirected to http://127.0.0.1:3000/welcome/about
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2025-07-09 18:14:01 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
