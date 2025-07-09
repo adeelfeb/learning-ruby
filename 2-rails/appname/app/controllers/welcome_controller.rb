@@ -1,5 +1,12 @@
 # app/controllers/welcome_controller.rb
 class WelcomeController < ApplicationController
+
+
+  # before_action :authenticate_user!, only: [:features, :about, :contact]
+  before_action :set_values, only: [ :features, :about, :contact]
+  # This will ensure that the user is authenticated before accessing the features, about, and contact
+  # actions. If the user is not authenticated, they will be redirected to the sign-in page. 
+
   def home
     check_variable = true # This is just a placeholder. Replace with actual logic to determine if the variable should be set.
     # This is the home page of the application.
@@ -17,10 +24,10 @@ class WelcomeController < ApplicationController
     end
 
     # Render the home view template.
-    logger.info ">>>>>>>>>>>>Rendering home page with greeting: #{@greeting} at #{@current_time}"
-    logger.debug ">>>>>>>>>>>>>>>Features available: #{@features.inspect}"
-    logger.warn ">>>>>>>>>>>>>>Warning message for the home page rendering."
-    logger.error ">>>>>>>>>>>>Error message for the home page rendering." if @features.empty?
+    # logger.info ">>>>>>>>>>>>Rendering home page with greeting: #{@greeting} at #{@current_time}"
+    # logger.debug ">>>>>>>>>>>>>>>Features available: #{@features.inspect}"
+    # logger.warn ">>>>>>>>>>>>>>Warning message for the home page rendering."
+    # logger.error ">>>>>>>>>>>>Error message for the home page rendering." if @features.empty?
 
     render "welcome/home"
     # This will render the home.html.erb view in app/views/welcome/
@@ -50,4 +57,14 @@ class WelcomeController < ApplicationController
   def contact
     # This action doesn't need explicit rendering if you have app/views/welcome/contact.html.erb
   end
+
+  private
+  def set_values
+    # This method can be used to set any instance variables or perform any setup needed for the controller actions.
+    @app_name = "My Rails App"
+    @version = "1.0.0"
+    @developer = "CodingCops"
+    @contact_email = "codingCops@cops.com"
+
+    end
 end

@@ -8,7 +8,6 @@
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <%= javascript_importmap_tags %>
   <style>
-    /* Basic styling for flash messages - you'd typically put this in application.css */
     .flash-messages {
       margin: 15px 0;
       padding: 10px;
@@ -35,8 +34,16 @@
   </style>
 </head>
 <body>
-
-  <%# Iterate through each flash message and display it %>
+  <header>
+    <h1>Welcome to Your Application</h1>
+    <nav>
+      <ul>
+        <li><%= link_to "Home", welcome_home_path %></li>
+        <li><%= link_to "Features", welcome_features_path %></li>
+        <li><%= link_to "About", welcome_about_path %></li>
+        <li><%= link_to "Contact", welcome_contact_path %></li>
+      </ul>
+    </nav>
   <% flash.each do |key, value| %>
     <div class="flash-messages <%= key %>">
       <%= value %>
@@ -44,5 +51,15 @@
   <% end %>
 
   <%= yield %>
-</body>
+
+  <%= @app_name if @app_name.present? %>
+  <br>
+  <%= @developer if @developer.present? %>
+  <br>
+  
+  <%= @version if @version.present? %>
+  <br>
+  <%= @contact_email if @contact_email.present? %>
+
+  </body>
 </html>
