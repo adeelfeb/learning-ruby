@@ -1,0 +1,26 @@
+# config/database.yml
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: 'codingcops' 
+  password: a
+  host: localhost # Or the IP address of your PostgreSQL server if it's remote
+
+development:
+  <<: *default
+  database: appname_development
+
+test:
+  <<: *default
+  database: appname_test
+
+production:
+  <<: *default
+  database: appname_production
+  # For production, it's highly recommended to use environment variables for sensitive info
+  # username: <%= ENV['APPNAME_DATABASE_USERNAME'] %>
+  # password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
+  # host: <%= ENV['APPNAME_DATABASE_HOST'] %>
