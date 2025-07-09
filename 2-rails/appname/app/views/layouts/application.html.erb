@@ -7,59 +7,19 @@
 
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <%= javascript_importmap_tags %>
-  <style>
-    .flash-messages {
-      margin: 15px 0;
-      padding: 10px;
-      border-radius: 5px;
-      text-align: center;
-      font-weight: bold;
-    }
-    .flash-messages.notice {
-      background-color: #d4edda; /* Light green */
-      color: #155724; /* Dark green */
-      border: 1px solid #c3e6cb;
-    }
-    .flash-messages.alert {
-      background-color: #f8d7da; /* Light red */
-      color: #721c24; /* Dark red */
-      border: 1px solid #f5c6cb;
-    }
-    /* Add more styles for other flash keys like success, error, info if you use them */
-    .flash-messages.success {
-      background-color: #d1ecf1; /* Light blue */
-      color: #0c5460; /* Dark blue */
-      border: 1px solid #bee5eb;
-    }
-  </style>
+
 </head>
 <body>
   <header>
-    <h1>Welcome to Your Application</h1>
-    <nav>
-      <ul>
-        <li><%= link_to "Home", welcome_home_path %></li>
-        <li><%= link_to "Features", welcome_features_path %></li>
-        <li><%= link_to "About", welcome_about_path %></li>
-        <li><%= link_to "Contact", welcome_contact_path %></li>
-      </ul>
-    </nav>
-  <% flash.each do |key, value| %>
-    <div class="flash-messages <%= key %>">
-      <%= value %>
-    </div>
-  <% end %>
+  <h1>Welcome to Your Application</h1>
+  <div class="container">
+  <div class="row">
+    <div class="col">
 
   <%= yield %>
-
-  <%= @app_name if @app_name.present? %>
-  <br>
-  <%= @developer if @developer.present? %>
-  <br>
-  
-  <%= @version if @version.present? %>
-  <br>
-  <%= @contact_email if @contact_email.present? %>
-
+  </div>
+  </div>
+  </div>
+  <%= render partial: "layouts/footer" %>
   </body>
 </html>

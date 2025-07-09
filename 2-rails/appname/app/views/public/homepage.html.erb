@@ -1,0 +1,12 @@
+<h2> Latest Posts </h2>
+<div id="posts">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h3><%= post.title %></h3>
+      <p><%= post.summary %></p>
+      <p><%= post.created_at %></p>
+      <p><%= post.active %></p>
+      <p><%= link_to "Show this post", post %></p>
+    </div>
+  <% end %>
+</div>  
