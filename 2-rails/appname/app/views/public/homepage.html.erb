@@ -1,12 +1,34 @@
 <h2> Latest Posts </h2>
-<div id="posts">
-  <% @posts.each do |post| %>
-    <div class="post">
-      <h3><%= post.title %></h3>
+
+<div id="welcome">
+  <h1>Welcome to the Public Homepage</h1>
+</div>
+
+<% @posts.each do |post| %>
+  <div class="post">
+
+    <% if post.title.present? %>
+      <h3><%= link_to post.title, post_path(post) %></h3>
+    <% end %>
+
+
+    <% if post.summary.present? %>
       <p><%= post.summary %></p>
-      <p><%= post.created_at %></p>
-      <p><%= post.active %></p>
-      <p><%= link_to "Show this post", post %></p>
-    </div>
-  <% end %>
-</div>  
+    <% end %>
+
+    <p><%= post.created_at %></p>
+
+    <% if post.active? %>
+      <p>Status: Active</p>
+    <% else %>
+      <p>Status: Inactive</p>
+    <% end %>
+
+    <p><%= link_to "Show this post", post %></p>
+
+  </div>
+<% end %>
+
+<% if @posts.empty? %>
+  <p>No posts available yet. Check back soon!</p>
+<% end %>

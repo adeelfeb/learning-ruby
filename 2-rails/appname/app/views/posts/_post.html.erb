@@ -1,17 +1,17 @@
 <div id="<%= dom_id post %>">
-  <p>
+  <h2>
     <strong>Title:</strong>
     <%= post.title %>
-  </p>
+  </h2>
 
-  <p>
+  <h3>
     <strong>Summary:</strong>
     <%= post.summary %>
-  </p>
+  </h3>
 
   <p>
     <strong>Body:</strong>
-    <%= post.body %>
+    <%= simple_format post.body %>
   </p>
 
   <p>
