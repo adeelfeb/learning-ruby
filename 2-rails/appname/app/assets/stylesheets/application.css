@@ -7,6 +7,23 @@
 
 /* (your existing manifest comments here) */
 
-#topnav li {
+#topnav {
+
+margin-top: 24px;
+li {
   display: inline;
+  padding: 5px 8px;
+  margin-top: 8px;
+}
+}
+
+#site-name{
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+.page-nav{
+  background-color: azure;
+  padding: 4px;
+  margin-bottom: 8px;
 }
