@@ -9487,3 +9487,262 @@ Processing by PostsController#create as TURBO_STREAM
 Completed 422 Unprocessable Content in 9ms (Views: 3.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.2ms)
 
 
+  [1m[36mCategory Load (23.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /* loading for pp */ LIMIT 11 /*application='Appname'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Appname'*/[0m
+  [1m[36mCategory Create (1.2ms)[0m  [1m[32mINSERT INTO "categories" ("title", "url", "created_at", "updated_at") VALUES ('Ruby On Rails', 'rubyOnRails', '2025-07-10 15:35:57.006148', '2025-07-10 15:35:57.006148') RETURNING "id" /*application='Appname'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT /*application='Appname'*/[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."id" DESC LIMIT 1 /*application='Appname'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='Appname'*/[0m
+  [1m[36mCategory Create (1.4ms)[0m  [1m[32mINSERT INTO "categories" ("title", "url", "created_at", "updated_at") VALUES ('React Js', 'ReactJs', '2025-07-10 15:38:07.734772', '2025-07-10 15:38:07.734772') RETURNING "id" /*application='Appname'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT /*application='Appname'*/[0m
+Started GET "/posts/new" for 127.0.0.1 at 2025-07-10 20:39:03 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='new',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 12.8ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 13.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | GC: 0.0ms)
+Completed 200 OK in 59ms (Views: 18.3ms | ActiveRecord: 7.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:39:14 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"1", "active"=>"1"}, "commit"=>"Create Post"}
+[31mUnpermitted parameter: :category_id. Context: { controller: PostsController, action: create, request: #<ActionDispatch::Request:0x000075ffecfc8fc0>, params: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"1", "active"=>"1"}, "commit"=>"Create Post", "controller"=>"posts", "action"=>"create"} }[0m
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 2.4ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 13ms (Views: 3.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:39:18 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"1", "active"=>"1"}, "commit"=>"Create Post"}
+[31mUnpermitted parameter: :category_id. Context: { controller: PostsController, action: create, request: #<ActionDispatch::Request:0x000075ffecf561a0>, params: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"1", "active"=>"1"}, "commit"=>"Create Post", "controller"=>"posts", "action"=>"create"} }[0m
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 3.0ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 10ms (Views: 3.6ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 20:39:19 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 3.2ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 20:39:21 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:39:22 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"2", "active"=>"1"}, "commit"=>"Create Post"}
+[31mUnpermitted parameter: :category_id. Context: { controller: PostsController, action: create, request: #<ActionDispatch::Request:0x000075ffed26e108>, params: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"2", "active"=>"1"}, "commit"=>"Create Post", "controller"=>"posts", "action"=>"create"} }[0m
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 2.9ms | GC: 0.4ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.1ms | GC: 0.4ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.4ms)
+Completed 422 Unprocessable Content in 10ms (Views: 3.7ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:39:23 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"1", "active"=>"1"}, "commit"=>"Create Post"}
+[31mUnpermitted parameter: :category_id. Context: { controller: PostsController, action: create, request: #<ActionDispatch::Request:0x000075ffecedfb40>, params: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"1", "active"=>"1"}, "commit"=>"Create Post", "controller"=>"posts", "action"=>"create"} }[0m
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 2.6ms | GC: 0.3ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.8ms | GC: 0.3ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.3ms)
+Completed 422 Unprocessable Content in 9ms (Views: 3.5ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:39:25 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"2", "active"=>"1"}, "commit"=>"Create Post"}
+[31mUnpermitted parameter: :category_id. Context: { controller: PostsController, action: create, request: #<ActionDispatch::Request:0x000075ffecea8f28>, params: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"asdf", "body"=>"asdfasdfasdf  saf a asdf asdf asdf asdf asdf asdf as ", "category_id"=>"2", "active"=>"1"}, "commit"=>"Create Post", "controller"=>"posts", "action"=>"create"} }[0m
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 2.4ms | GC: 0.2ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.6ms | GC: 0.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 9ms (Views: 3.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 20:40:53 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2025-07-10 20:42:11 +0500
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='new',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 7.9ms | GC: 0.3ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 8.5ms | GC: 0.3ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | GC: 0.3ms)
+Completed 200 OK in 22ms (Views: 9.6ms | ActiveRecord: 3.9ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:42:19 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"afd", "summary"=>"sd", "body"=>"sfd sdf sd fsdf sdf sdf sdf sdf sdf sd", "category_id"=>"1", "active"=>"1"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:36:in `create'
+  [1m[36mCategory Load (2.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1 /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:36:in `create'
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "summary", "body", "active", "created_at", "updated_at", "category_id") VALUES ('afd', 'sd', 'sfd sdf sd fsdf sdf sdf sdf sdf sdf sd', TRUE, '2025-07-10 15:42:19.916712', '2025-07-10 15:42:19.916712', 1) RETURNING "id" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:36:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:36:in `create'
+Redirected to http://127.0.0.1:3000/posts/5
+Completed 302 Found in 18ms (ActiveRecord: 4.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2025-07-10 20:42:19 +0500
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 5 LIMIT 1 /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mPost Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered posts/_post.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.9ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 4.9ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2025-07-10 20:42:20 +0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 5 LIMIT 1 /*action='edit',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='edit',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 2.3ms | GC: 0.0ms)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 20:42:22 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 3.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2025-07-10 20:42:24 +0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 5 LIMIT 1 /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mPost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.3ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | GC: 0.3ms)
+Completed 200 OK in 10ms (Views: 2.9ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-10 20:42:26 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:9
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:10
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mPost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 4.0ms | GC: 0.3ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.3ms)
+Completed 200 OK in 10ms (Views: 4.6ms | ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."id" DESC LIMIT 1 /*application='Appname'*/[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."id" DESC LIMIT 1 /*application='Appname'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='Appname'*/[0m
+  [1m[36mCategory Update (1.1ms)[0m  [1m[33mUPDATE "categories" SET "url" = 'reactJsBlogs', "updated_at" = '2025-07-10 15:51:08.005019' WHERE "categories"."id" = 2 /*application='Appname'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT /*application='Appname'*/[0m

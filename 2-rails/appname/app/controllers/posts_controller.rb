@@ -91,6 +91,6 @@ class PostsController < ApplicationController
     # Corrected: Use params.require(:model_name).permit(:allowed_attribute1, ...)
     # It requires a top-level `:post` key and permits only the specified attributes
     # for mass assignment.
-    params.require(:post).permit(:title, :summary, :body, :active, :category)
+    params.require(:post).permit(:title, :summary, :body, :active, :category_id)
   end
 end
