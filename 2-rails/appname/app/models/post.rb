@@ -4,8 +4,8 @@ class Post < ApplicationRecord
     validates :active, inclusion: { in: [true, false] }
     validates :body, presence: true, length: { minimum: 9 }
 
-    belongs_to :user
-    has_many :comments
+    belongs_to :category
+   
 
     def details
       "This post was created on #{created_at.strftime("%d %m %y")}"

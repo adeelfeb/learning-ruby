@@ -9033,3 +9033,457 @@ Processing by PublicController#homepage as HTML
 Completed 200 OK in 18ms (Views: 5.3ms | ActiveRecord: 0.9ms (3 queries, 0 cached) | GC: 0.6ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7888518507772974855) /*application='Appname'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Appname'*/[0m
+Migrating to AddCategoryRefToPosts (20250710150337)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Appname'*/[0m
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "posts" ADD "category_id" bigint NOT NULL /*application='Appname'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*application='Appname'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7888518507772974855) /*application='Appname'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7888518507772974855) /*application='Appname'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Appname'*/[0m
+Migrating to AddCategoryRefToPosts (20250710150337)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Appname'*/[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "posts" ADD "category_id" bigint /*application='Appname'*/[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id") /*application='Appname'*/[0m
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+ /*application='Appname'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250710150337') RETURNING "version" /*application='Appname'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT /*application='Appname'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7888518507772974855) /*application='Appname'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-07-10 20:09:11 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:9
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:10
+  Rendered posts/_post.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mPost Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 25.7ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 29.8ms | ActiveRecord: 6.4ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-10 20:09:13 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:9
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:10
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mPost Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-10 20:09:13 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:9
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:10
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mPost Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 20:09:19 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/_post.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.0ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2025-07-10 20:09:21 +0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1 /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 11.5ms | GC: 8.8ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | GC: 8.8ms)
+Completed 200 OK in 19ms (Views: 12.3ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 8.8ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2025-07-10 20:09:22 +0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1 /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2025-07-10 20:09:23 +0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1 /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started DELETE "/posts/2" for 127.0.0.1 at 2025-07-10 20:09:24 +0500
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1 /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:67:in `destroy'
+  [1m[36mPost Destroy (1.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = 2 /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:67:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:67:in `destroy'
+Redirected to http://127.0.0.1:3000/posts
+Completed 303 See Other in 12ms (ActiveRecord: 2.4ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 20:09:24 +0500
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2025-07-10 20:09:24 +0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 3 LIMIT 1 /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.2ms)
+Completed 200 OK in 12ms (Views: 2.9ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started DELETE "/posts/3" for 127.0.0.1 at 2025-07-10 20:09:25 +0500
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 3 LIMIT 1 /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:67:in `destroy'
+  [1m[36mPost Destroy (0.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = 3 /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:67:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:67:in `destroy'
+Redirected to http://127.0.0.1:3000/posts
+Completed 303 See Other in 8ms (ActiveRecord: 1.8ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 20:09:26 +0500
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/_post.html.erb (Duration: 0.6ms | GC: 0.2ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.2ms)
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2025-07-10 20:09:26 +0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 4 LIMIT 1 /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mPost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.2ms | GC: 0.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | GC: 0.2ms)
+Completed 200 OK in 15ms (Views: 2.8ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started DELETE "/posts/4" for 127.0.0.1 at 2025-07-10 20:09:28 +0500
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 4 LIMIT 1 /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:67:in `destroy'
+  [1m[36mPost Destroy (0.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = 4 /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:67:in `destroy'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*action='destroy',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:67:in `destroy'
+Redirected to http://127.0.0.1:3000/posts
+Completed 303 See Other in 9ms (ActiveRecord: 1.7ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 20:09:28 +0500
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | GC: 0.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.2ms)
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2025-07-10 20:09:29 +0500
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 4.2ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `url' for Category:Class)
+Caused by: NameError (undefined local variable or method `url' for Category:Class)
+
+Information for: ActionView::Template::Error (undefined local variable or method `url' for Category:Class):
+    28: 
+    29:   <div>
+    30:     <%= form.label :category_id, style: "display: block" %>
+    31:     <%= form.select :category_id, Category.all.collect{ |c| [c.title, c.id]} %>
+    32:   </div>
+    33: 
+    34:   <div>
+  
+app/models/category.rb:5:in `<class:Category>'
+app/models/category.rb:1:in `<main>'
+app/views/posts/_form.html.erb:31
+app/views/posts/_form.html.erb:1
+app/views/posts/new.html.erb:5
+
+Information for cause: NameError (undefined local variable or method `url' for Category:Class):
+  
+app/models/category.rb:5:in `<class:Category>'
+app/models/category.rb:1:in `<main>'
+app/views/posts/_form.html.erb:31
+app/views/posts/_form.html.erb:1
+app/views/posts/new.html.erb:5
+Started GET "/posts/new" for 127.0.0.1 at 2025-07-10 20:09:30 +0500
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.6ms | GC: 0.1ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | GC: 0.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `url' for Category:Class)
+Caused by: NameError (undefined local variable or method `url' for Category:Class)
+
+Information for: ActionView::Template::Error (undefined local variable or method `url' for Category:Class):
+    28: 
+    29:   <div>
+    30:     <%= form.label :category_id, style: "display: block" %>
+    31:     <%= form.select :category_id, Category.all.collect{ |c| [c.title, c.id]} %>
+    32:   </div>
+    33: 
+    34:   <div>
+  
+app/models/category.rb:5:in `<class:Category>'
+app/models/category.rb:1:in `<main>'
+app/views/posts/_form.html.erb:31
+app/views/posts/_form.html.erb:1
+app/views/posts/new.html.erb:5
+
+Information for cause: NameError (undefined local variable or method `url' for Category:Class):
+  
+app/models/category.rb:5:in `<class:Category>'
+app/models/category.rb:1:in `<main>'
+app/views/posts/_form.html.erb:31
+app/views/posts/_form.html.erb:1
+app/views/posts/new.html.erb:5
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 20:10:10 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/posts/new" for 127.0.0.1 at 2025-07-10 20:10:44 +0500
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='new',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 6.3ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 6.7ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 9.0ms | ActiveRecord: 2.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:11:39 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Temp ", "summary"=>"This is goiong to be fun if i make it moret than 2000 world will it crash on me some ow ", "body"=>"asdgasg", "active"=>"1"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:36:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:36:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 4.0ms | GC: 0.4ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.2ms | GC: 0.4ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 0.4ms)
+Completed 422 Unprocessable Content in 33ms (Views: 4.8ms | ActiveRecord: 2.6ms (1 query, 0 cached) | GC: 9.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:11:49 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Temp ", "summary"=>"sd", "body"=>"This is goiong to be fun if i make it moret than 2000 world will it crash on me some ow ", "active"=>"1"}, "commit"=>"Create Post"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 3.7ms | GC: 0.2ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.9ms | GC: 0.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 11ms (Views: 4.5ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 20:11:49 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.2ms)
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:11:53 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Temp ", "summary"=>"sd", "body"=>"This is goiong to be fun if i make it moret than 2000 world will it crash on me some ow ", "active"=>"0"}, "commit"=>"Create Post"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 2.3ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 9ms (Views: 3.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:11:54 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Temp ", "summary"=>"sd", "body"=>"This is goiong to be fun if i make it moret than 2000 world will it crash on me some ow ", "active"=>"0"}, "commit"=>"Create Post"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 2.2ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.1ms)
+Completed 422 Unprocessable Content in 9ms (Views: 3.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2025-07-10 20:11:54 +0500
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Temp ", "summary"=>"sd", "body"=>"This is goiong to be fun if i make it moret than 2000 world will it crash on me some ow ", "active"=>"0"}, "commit"=>"Create Post"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*action='create',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/_form.html.erb:31:in `collect'
+  Rendered posts/_form.html.erb (Duration: 2.3ms | GC: 0.0ms)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 9ms (Views: 3.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.2ms)
+
+
