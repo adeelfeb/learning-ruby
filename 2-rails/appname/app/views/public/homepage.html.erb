@@ -7,25 +7,10 @@
 <% @posts.each do |post| %>
   <div class="post">
 
-    <% if post.title.present? %>
-      <h3><%= link_to post.title, post_path(post) %></h3>
-    <% end %>
+  <%= render partial: "posts/post", locals: { post: post } %>
 
-
-    <% if post.summary.present? %>
-      <p><%= post.summary %></p>
-    <% end %>
-
-    <p><%= post.created_at %></p>
-
-    <% if post.active? %>
-      <p>Status: Active</p>
-    <% else %>
-      <p>Status: Inactive</p>
-    <% end %>
-
-    <p><%= link_to "Show this post", post %></p>
-
+    
+   
   </div>
 <% end %>
 

@@ -3514,3 +3514,2000 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 19ms (Views: 9.3ms | ActiveRecord: 3.6ms (1 query, 0 cached) | GC: 0.7ms)
 
 
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 15:59:53 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (12.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 26.5ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 15.7ms | ActiveRecord: 17.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 16:18:14 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (13.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 37.1ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | GC: 0.0ms)
+Completed 200 OK in 81ms (Views: 21.3ms | ActiveRecord: 26.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-07-10 16:18:15 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 16:18:37 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 2.1ms)
+Completed 200 OK in 15ms (Views: 5.3ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 2.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 16:18:52 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.8ms | GC: 0.4ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | GC: 0.4ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.4ms)
+Completed 200 OK in 14ms (Views: 3.7ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 16:26:08 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (15.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.7ms | GC: 0.1ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.1ms | GC: 0.5ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | GC: 0.7ms)
+Completed 200 OK in 29ms (Views: 5.1ms | ActiveRecord: 18.4ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 16:26:08 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | GC: 0.2ms)
+Completed 200 OK in 16ms (Views: 3.9ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 16:26:09 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.1ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | GC: 0.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.1ms)
+Completed 200 OK in 14ms (Views: 3.4ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 16:26:44 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 13ms (Views: 2.8ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:26:48 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:29:00 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 2.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-e4e1bf80.css" for 127.0.0.1 at 2025-07-10 16:29:00 +0500
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:34:36 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (13.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 23.0ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 14.1ms | ActiveRecord: 18.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/public/homepage" for 127.0.0.1 at 2025-07-10 16:34:39 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/public/homepage"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:34:51 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:35:47 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:37:43 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (12.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 22.6ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | GC: 0.0ms)
+Completed 200 OK in 51ms (Views: 14.9ms | ActiveRecord: 17.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:37:43 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:37:44 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:37:44 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:38:11 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:38:11 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:39:53 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 7.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 8.6ms | ActiveRecord: 2.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:39:53 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:40:19 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (13.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 23.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 13.5ms | ActiveRecord: 19.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:40:19 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:40:26 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 3.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:40:26 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:41:03 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 6.8ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 7.5ms | ActiveRecord: 2.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:41:03 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:41:11 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 2.3ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:41:11 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:41:11 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:41:11 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:41:11 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 2.8ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:41:11 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:41:12 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:41:12 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:42:47 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 7.0ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 8.1ms | ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:42:47 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:43:26 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 6.5ms | GC: 0.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | GC: 0.9ms)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:43:26 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:43:44 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-aaea93f6.css" for 127.0.0.1 at 2025-07-10 16:43:44 +0500
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:43:44 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:43:59 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 2.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/assets/application-07704953.css" for 127.0.0.1 at 2025-07-10 16:44:00 +0500
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:44:00 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:44:07 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 2.5ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/application-1a0d4174.css" for 127.0.0.1 at 2025-07-10 16:44:07 +0500
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:44:07 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:44:15 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 3.3ms | GC: 1.4ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | GC: 1.4ms)
+Completed 200 OK in 11ms (Views: 4.2ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/assets/application-f28a1fd5.css" for 127.0.0.1 at 2025-07-10 16:44:15 +0500
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:44:15 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:46:00 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 5.8ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | GC: 3.9ms)
+Completed 200 OK in 20ms (Views: 12.7ms | ActiveRecord: 1.9ms (1 query, 0 cached) | GC: 3.9ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:46:00 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:46:25 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 7.5ms | GC: 0.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | GC: 0.4ms)
+Completed 200 OK in 17ms (Views: 8.1ms | ActiveRecord: 2.7ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:46:25 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:47:24 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 5.5ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 6.7ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:47:24 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/posts/2" for 127.0.0.1 at 2025-07-10 16:47:32 +0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1 /*action='show',application='Appname',controller='posts'*/[0m
+  ↳ app/controllers/posts_controller.rb:81:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.7ms | GC: 0.3ms)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.0ms | GC: 0.3ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.3ms)
+Completed 200 OK in 16ms (Views: 2.8ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 16:47:36 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.4ms)
+Completed 200 OK in 11ms (Views: 4.9ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:47:36 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:47:41 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:47:41 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:48:02 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 6.6ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | GC: 2.8ms)
+Completed 200 OK in 19ms (Views: 11.0ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 2.8ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:48:02 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:48:17 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 6.3ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 7.1ms | ActiveRecord: 2.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:48:17 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/welcome/contact" for 127.0.0.1 at 2025-07-10 16:48:18 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/contact"):
+  
+Started GET "/posts" for 127.0.0.1 at 2025-07-10 16:48:19 +0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='index',application='Appname',controller='posts'*/[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/_post.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 4.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:49:24 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 5.8ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 6.7ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:49:24 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:49:32 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 6.8ms | GC: 0.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | GC: 0.2ms)
+Completed 200 OK in 16ms (Views: 8.5ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:49:32 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:49:58 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 9.9ms | GC: 3.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | GC: 3.4ms)
+Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 3.4ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:49:58 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/welcome/contact" for 127.0.0.1 at 2025-07-10 16:50:01 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/contact"):
+  
+Started GET "/welcome/features" for 127.0.0.1 at 2025-07-10 16:50:02 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/features"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:51:24 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 6.4ms | GC: 0.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.9ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | GC: 0.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_url' for #<ActionView::Base:0x0000000003de78>)
+Caused by: NameError (undefined local variable or method `about_url' for #<ActionView::Base:0x0000000003de78>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `about_url' for #<ActionView::Base:0x0000000003de78>):
+    1: <h1 class="float-left">Blogs Web</h1>
+    2: 
+    3: <ul class="float-right list-unstyled" id="topnav">
+    4:   <li><%= link_to "About", about_url %></li> 
+    5:   <li><%= link_to "Posts", posts_url %></li>
+    6:   <li><%= link_to "New Post", new_post_url %></li>
+    7:   <li><%= link_to "Contact", contact_url %></li>
+  
+app/views/layouts/_menu.html.erb:4
+app/views/layouts/application.html.erb:19
+
+Information for cause: NameError (undefined local variable or method `about_url' for #<ActionView::Base:0x0000000003de78>):
+  
+app/views/layouts/_menu.html.erb:4
+app/views/layouts/application.html.erb:19
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:51:24 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:55:34 +0500
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:55:34 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:56:31 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 5.9ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.3ms)
+Completed 200 OK in 15ms (Views: 7.4ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:56:31 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:57:00 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 7.6ms | GC: 0.4ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.6ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | GC: 0.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="float-left">Blogs Web</h1>
+
+<ul class="float-right list-unstyled" id="topnav">
+  <li><%= link_to "About", about_url %></li> 
+  <li><%= link_to "Blogs, blog_url %></li>
+  <li><%= link_to "Contact", contact_url %></li>
+  <li><%= link_to "Home", root_url %></li> 
+
+
+</ul>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/layouts/_menu.html.erb:6: syntax error, unexpected constant, expecting ')'
+...uffer.append=( link_to "Contact", contact_url ); @output_buf...
+...                        ^~~~~~~
+/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/layouts/_menu.html.erb:12: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="float-left">Blogs Web</h1>
+
+<ul class="float-right list-unstyled" id="topnav">
+  <li><%= link_to "About", about_url %></li> 
+  <li><%= link_to "Blogs, blog_url %></li>
+  <li><%= link_to "Contact", contact_url %></li>
+  <li><%= link_to "Home", root_url %></li> 
+
+
+</ul>
+):
+1:    <h1 class="float-left">Blogs Web</h1>
+2:    
+3:    <ul class="float-right list-unstyled" id="topnav">
+4:      <li><%= link_to "About", about_url %></li> 
+5:      <li><%= link_to "Blogs, blog_url %></li>
+6:      <li><%= link_to "Contact", contact_url %></li>
+7:      <li><%= link_to "Home", root_url %></li> 
+8:    
+9:    
+10:    </ul>
+  
+app/views/layouts/_menu.html.erb:6: syntax error, unexpected constant, expecting ')'
+app/views/layouts/_menu.html.erb:12: unterminated string meets end of file
+app/views/layouts/application.html.erb:19
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/layouts/_menu.html.erb:6: syntax error, unexpected constant, expecting ')'
+...uffer.append=( link_to "Contact", contact_url ); @output_buf...
+...                        ^~~~~~~
+/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/layouts/_menu.html.erb:12: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/layouts/_menu.html.erb:6: syntax error, unexpected constant, expecting ')'
+app/views/layouts/_menu.html.erb:12: unterminated string meets end of file
+app/views/layouts/application.html.erb:19
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:57:01 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:57:36 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 7.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 2.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:57:36 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:57:49 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 7.9ms | GC: 1.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | GC: 1.4ms)
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 2.3ms (1 query, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:57:49 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/contact" for 127.0.0.1 at 2025-07-10 16:57:53 +0500
+Processing by PublicController#contact as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::MissingExactTemplate (PublicController#contact is missing a template for request formats: text/html):
+  
+actionpack (8.0.2) lib/action_controller/metal/implicit_render.rb:49:in `default_render'
+actionpack (8.0.2) lib/action_controller/metal/basic_implicit_render.rb:9:in `send_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (8.0.2) lib/active_support/callbacks.rb:120:in `block in run_callbacks'
+turbo-rails (2.0.16) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.16) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+actiontext (8.0.2) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (8.0.2) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `instance_exec'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+activesupport (8.0.2) lib/active_support/callbacks.rb:140:in `run_callbacks'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:76:in `block in process_action'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (8.0.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:75:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (8.0.2) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:163:in `process'
+actionview (8.0.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (8.0.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (8.0.2) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.2) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.16) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.16) lib/rack/etag.rb:29:in `call'
+rack (3.1.16) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.16) lib/rack/head.rb:15:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/cookies.rb:706:in `call'
+activerecord (8.0.2) lib/active_record/migration.rb:671:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.16) lib/rack/method_override.rb:28:in `call'
+rack (3.1.16) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.16) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:57:58 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 3.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 4.6ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:57:58 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 16:59:05 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered public/homepage.html.erb within layouts/application (Duration: 10.3ms | GC: 3.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | GC: 3.6ms)
+Completed 200 OK in 21ms (Views: 12.5ms | ActiveRecord: 2.5ms (1 query, 0 cached) | GC: 3.6ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 16:59:05 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:03:08 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 8.9ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 9.9ms | ActiveRecord: 2.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:03:08 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:04:00 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 6.9ms | GC: 0.2ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | GC: 0.3ms)
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:04:00 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:04:07 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 7.0ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 8.2ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:04:07 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:04:14 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 7.1ms | GC: 0.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | GC: 0.3ms)
+Completed 200 OK in 16ms (Views: 8.5ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:04:14 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:04:24 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 14.2ms | GC: 4.8ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | GC: 5.3ms)
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 5.3ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:04:24 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:06:51 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 6.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <=% if local_assigns[:post] %>
+
+<div id="<%= dom_id post %>">
+  <h2>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </h2>
+
+  <h3>
+    <strong>Summary:</strong>
+    <%= post.summary %>
+  </h3>
+
+  <p>
+    <strong>Body:</strong>
+    <%= simple_format post.body %>
+  </p>
+
+  <p>
+    <strong>Active:</strong>
+    <%= post.active %>
+  </p>
+
+  <p>
+      <strong>Created at:</strong>
+      <%= post.created_at.strftime("%B %d, %Y") %>
+    </p>
+
+    <p>
+      <strong>Updated at:</strong>
+      <%= post.updated_at.strftime("%B %d, %Y") %>
+    </p>
+
+</div>
+
+<% end %>
+
+
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/posts/_post.html.erb:39: syntax error, unexpected `end'
+          end
+          ^~~
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <=% if local_assigns[:post] %>
+
+<div id="<%= dom_id post %>">
+  <h2>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </h2>
+
+  <h3>
+    <strong>Summary:</strong>
+    <%= post.summary %>
+  </h3>
+
+  <p>
+    <strong>Body:</strong>
+    <%= simple_format post.body %>
+  </p>
+
+  <p>
+    <strong>Active:</strong>
+    <%= post.active %>
+  </p>
+
+  <p>
+      <strong>Created at:</strong>
+      <%= post.created_at.strftime("%B %d, %Y") %>
+    </p>
+
+    <p>
+      <strong>Updated at:</strong>
+      <%= post.updated_at.strftime("%B %d, %Y") %>
+    </p>
+
+</div>
+
+<% end %>
+
+
+):
+1:    <=% if local_assigns[:post] %>
+2:    
+3:    <div id="<%= dom_id post %>">
+4:      <h2>
+5:        <strong>Title:</strong>
+6:        <%= post.title %>
+7:      </h2>
+8:    
+9:      <h3>
+10:        <strong>Summary:</strong>
+11:        <%= post.summary %>
+12:      </h3>
+13:    
+14:      <p>
+15:        <strong>Body:</strong>
+16:        <%= simple_format post.body %>
+17:      </p>
+18:    
+19:      <p>
+20:        <strong>Active:</strong>
+21:        <%= post.active %>
+22:      </p>
+23:    
+24:      <p>
+25:          <strong>Created at:</strong>
+26:          <%= post.created_at.strftime("%B %d, %Y") %>
+27:        </p>
+28:    
+29:        <p>
+30:          <strong>Updated at:</strong>
+31:          <%= post.updated_at.strftime("%B %d, %Y") %>
+32:        </p>
+33:    
+34:    </div>
+35:    
+36:    <% end %>
+  
+app/views/posts/_post.html.erb:39: syntax error, unexpected `end'
+app/views/public/homepage.html.erb:10
+app/views/public/homepage.html.erb:7
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/posts/_post.html.erb:39: syntax error, unexpected `end'
+          end
+          ^~~
+):
+  
+app/views/posts/_post.html.erb:39: syntax error, unexpected `end'
+app/views/public/homepage.html.erb:10
+app/views/public/homepage.html.erb:7
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:06:52 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:07:09 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 8.4ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 3.4ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= if local_assigns[:post] %>
+
+<div id="<%= dom_id post %>">
+  <h2>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </h2>
+
+  <h3>
+    <strong>Summary:</strong>
+    <%= post.summary %>
+  </h3>
+
+  <p>
+    <strong>Body:</strong>
+    <%= simple_format post.body %>
+  </p>
+
+  <p>
+    <strong>Active:</strong>
+    <%= post.active %>
+  </p>
+
+  <p>
+      <strong>Created at:</strong>
+      <%= post.created_at.strftime("%B %d, %Y") %>
+    </p>
+
+    <p>
+      <strong>Updated at:</strong>
+      <%= post.updated_at.strftime("%B %d, %Y") %>
+    </p>
+
+</div>
+
+<% end %>
+
+
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/posts/_post.html.erb:1: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...end=( if local_assigns[:post] ); @output_buffer.safe_append='
+...                              ^
+/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/posts/_post.html.erb:39: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= if local_assigns[:post] %>
+
+<div id="<%= dom_id post %>">
+  <h2>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </h2>
+
+  <h3>
+    <strong>Summary:</strong>
+    <%= post.summary %>
+  </h3>
+
+  <p>
+    <strong>Body:</strong>
+    <%= simple_format post.body %>
+  </p>
+
+  <p>
+    <strong>Active:</strong>
+    <%= post.active %>
+  </p>
+
+  <p>
+      <strong>Created at:</strong>
+      <%= post.created_at.strftime("%B %d, %Y") %>
+    </p>
+
+    <p>
+      <strong>Updated at:</strong>
+      <%= post.updated_at.strftime("%B %d, %Y") %>
+    </p>
+
+</div>
+
+<% end %>
+
+
+):
+1:    <%= if local_assigns[:post] %>
+2:    
+3:    <div id="<%= dom_id post %>">
+4:      <h2>
+5:        <strong>Title:</strong>
+6:        <%= post.title %>
+7:      </h2>
+8:    
+9:      <h3>
+10:        <strong>Summary:</strong>
+11:        <%= post.summary %>
+12:      </h3>
+13:    
+14:      <p>
+15:        <strong>Body:</strong>
+16:        <%= simple_format post.body %>
+17:      </p>
+18:    
+19:      <p>
+20:        <strong>Active:</strong>
+21:        <%= post.active %>
+22:      </p>
+23:    
+24:      <p>
+25:          <strong>Created at:</strong>
+26:          <%= post.created_at.strftime("%B %d, %Y") %>
+27:        </p>
+28:    
+29:        <p>
+30:          <strong>Updated at:</strong>
+31:          <%= post.updated_at.strftime("%B %d, %Y") %>
+32:        </p>
+33:    
+34:    </div>
+35:    
+36:    <% end %>
+  
+app/views/posts/_post.html.erb:1: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/posts/_post.html.erb:39: syntax error, unexpected `end', expecting ')'
+app/views/public/homepage.html.erb:10
+app/views/public/homepage.html.erb:7
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/posts/_post.html.erb:1: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...end=( if local_assigns[:post] ); @output_buffer.safe_append='
+...                              ^
+/home/codingcops/Documents/temp/github/learning-ruby/2-rails/appname/app/views/posts/_post.html.erb:39: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/posts/_post.html.erb:1: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/posts/_post.html.erb:39: syntax error, unexpected `end', expecting ')'
+app/views/public/homepage.html.erb:10
+app/views/public/homepage.html.erb:7
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:07:10 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:07:22 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 10.1ms | GC: 0.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | GC: 0.1ms)
+Completed 200 OK in 19ms (Views: 10.0ms | ActiveRecord: 3.8ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:07:22 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:10:40 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 4.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:10:40 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/about" for 127.0.0.1 at 2025-07-10 17:10:46 +0500
+Processing by PublicController#about as HTML
+Completed 406 Not Acceptable in 12ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionController::MissingExactTemplate (PublicController#about is missing a template for request formats: text/html):
+  
+actionpack (8.0.2) lib/action_controller/metal/implicit_render.rb:49:in `default_render'
+actionpack (8.0.2) lib/action_controller/metal/basic_implicit_render.rb:9:in `send_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (8.0.2) lib/active_support/callbacks.rb:120:in `block in run_callbacks'
+turbo-rails (2.0.16) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.16) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+actiontext (8.0.2) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (8.0.2) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `instance_exec'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+activesupport (8.0.2) lib/active_support/callbacks.rb:140:in `run_callbacks'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:76:in `block in process_action'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (8.0.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:75:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (8.0.2) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:163:in `process'
+actionview (8.0.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (8.0.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (8.0.2) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.2) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.16) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.16) lib/rack/etag.rb:29:in `call'
+rack (3.1.16) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.16) lib/rack/head.rb:15:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/cookies.rb:706:in `call'
+activerecord (8.0.2) lib/active_record/migration.rb:671:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.16) lib/rack/method_override.rb:28:in `call'
+rack (3.1.16) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.16) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/contact" for 127.0.0.1 at 2025-07-10 17:10:46 +0500
+Processing by PublicController#contact as HTML
+Completed 406 Not Acceptable in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::MissingExactTemplate (PublicController#contact is missing a template for request formats: text/html):
+  
+actionpack (8.0.2) lib/action_controller/metal/implicit_render.rb:49:in `default_render'
+actionpack (8.0.2) lib/action_controller/metal/basic_implicit_render.rb:9:in `send_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (8.0.2) lib/active_support/callbacks.rb:120:in `block in run_callbacks'
+turbo-rails (2.0.16) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.16) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+actiontext (8.0.2) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (8.0.2) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `instance_exec'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+activesupport (8.0.2) lib/active_support/callbacks.rb:140:in `run_callbacks'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:76:in `block in process_action'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (8.0.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:75:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (8.0.2) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:163:in `process'
+actionview (8.0.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (8.0.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (8.0.2) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.2) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.16) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.16) lib/rack/etag.rb:29:in `call'
+rack (3.1.16) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.16) lib/rack/head.rb:15:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/cookies.rb:706:in `call'
+activerecord (8.0.2) lib/active_record/migration.rb:671:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.16) lib/rack/method_override.rb:28:in `call'
+rack (3.1.16) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.16) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/blog" for 127.0.0.1 at 2025-07-10 17:10:47 +0500
+Processing by PublicController#blog as HTML
+Completed 406 Not Acceptable in 15ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::MissingExactTemplate (PublicController#blog is missing a template for request formats: text/html):
+  
+actionpack (8.0.2) lib/action_controller/metal/implicit_render.rb:49:in `default_render'
+actionpack (8.0.2) lib/action_controller/metal/basic_implicit_render.rb:9:in `send_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (8.0.2) lib/active_support/callbacks.rb:120:in `block in run_callbacks'
+turbo-rails (2.0.16) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.16) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+actiontext (8.0.2) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (8.0.2) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `instance_exec'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+activesupport (8.0.2) lib/active_support/callbacks.rb:140:in `run_callbacks'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:76:in `block in process_action'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (8.0.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:75:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (8.0.2) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:163:in `process'
+actionview (8.0.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (8.0.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (8.0.2) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.2) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.16) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.16) lib/rack/etag.rb:29:in `call'
+rack (3.1.16) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.16) lib/rack/head.rb:15:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/cookies.rb:706:in `call'
+activerecord (8.0.2) lib/active_record/migration.rb:671:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.16) lib/rack/method_override.rb:28:in `call'
+rack (3.1.16) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.16) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:10:48 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:10:48 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/contact" for 127.0.0.1 at 2025-07-10 17:10:50 +0500
+Processing by PublicController#contact as HTML
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::MissingExactTemplate (PublicController#contact is missing a template for request formats: text/html):
+  
+actionpack (8.0.2) lib/action_controller/metal/implicit_render.rb:49:in `default_render'
+actionpack (8.0.2) lib/action_controller/metal/basic_implicit_render.rb:9:in `send_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (8.0.2) lib/active_support/callbacks.rb:120:in `block in run_callbacks'
+turbo-rails (2.0.16) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.16) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+actiontext (8.0.2) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (8.0.2) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `instance_exec'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+activesupport (8.0.2) lib/active_support/callbacks.rb:140:in `run_callbacks'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:76:in `block in process_action'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (8.0.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:75:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (8.0.2) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:163:in `process'
+actionview (8.0.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (8.0.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (8.0.2) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.2) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.16) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.16) lib/rack/etag.rb:29:in `call'
+rack (3.1.16) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.16) lib/rack/head.rb:15:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/cookies.rb:706:in `call'
+activerecord (8.0.2) lib/active_record/migration.rb:671:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.16) lib/rack/method_override.rb:28:in `call'
+rack (3.1.16) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.16) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:10:51 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:10:51 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/about" for 127.0.0.1 at 2025-07-10 17:10:51 +0500
+Processing by PublicController#about as HTML
+Completed 406 Not Acceptable in 12ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionController::MissingExactTemplate (PublicController#about is missing a template for request formats: text/html):
+  
+actionpack (8.0.2) lib/action_controller/metal/implicit_render.rb:49:in `default_render'
+actionpack (8.0.2) lib/action_controller/metal/basic_implicit_render.rb:9:in `send_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (8.0.2) lib/active_support/callbacks.rb:120:in `block in run_callbacks'
+turbo-rails (2.0.16) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.16) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+actiontext (8.0.2) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (8.0.2) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `instance_exec'
+activesupport (8.0.2) lib/active_support/callbacks.rb:129:in `block in run_callbacks'
+activesupport (8.0.2) lib/active_support/callbacks.rb:140:in `run_callbacks'
+actionpack (8.0.2) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:76:in `block in process_action'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (8.0.2) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (8.0.2) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (8.0.2) lib/action_controller/metal/instrumentation.rb:75:in `process_action'
+actionpack (8.0.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (8.0.2) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (8.0.2) lib/abstract_controller/base.rb:163:in `process'
+actionview (8.0.2) lib/action_view/rendering.rb:40:in `process'
+actionpack (8.0.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (8.0.2) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.2) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.2) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.2) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.16) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.16) lib/rack/etag.rb:29:in `call'
+rack (3.1.16) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.16) lib/rack/head.rb:15:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (8.0.2) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/cookies.rb:706:in `call'
+activerecord (8.0.2) lib/active_record/migration.rb:671:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.16) lib/rack/method_override.rb:28:in `call'
+rack (3.1.16) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.16) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:10:52 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-07-10 17:10:52 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:10:53 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 3.1ms | GC: 0.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 0.1ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:10:54 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 4.1ms | GC: 0.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | GC: 0.1ms)
+Completed 200 OK in 14ms (Views: 5.4ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:10:54 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 2.3ms | GC: 0.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.1ms)
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-10 17:10:54 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered posts/_post.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered public/homepage.html.erb within layouts/application (Duration: 3.0ms | GC: 0.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | GC: 0.1ms)
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.1ms)
+
+
