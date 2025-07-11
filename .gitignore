@@ -66,6 +66,33 @@
 *~
 .sass-cache/
 
+# Ignore Rails log, tmp, and storage folders inside appname
+appname/log/
+appname/tmp/
+appname/storage/
+
+# Optional: keep .keep files if Rails expects them
+!appname/log/.keep
+!appname/tmp/.keep
+!appname/storage/.keep
+
+# Ignore Solid Cache & Solid Queue (if applicable)
+appname/tmp/solid_cache/
+appname/tmp/solid_queue/
+
+# Ignore ActiveStorage tmp storage
+appname/tmp/storage/
+!appname/tmp/storage/.keep
+
+# Ignore cache, pids, sockets, etc.
+appname/tmp/cache/
+appname/tmp/pids/
+appname/tmp/sockets/
+appname/tmp/files/
+
+# Ignore uploaded files (for local)
+appname/public/uploads
+
 # OS generated files
 .DS_Store
 .localized

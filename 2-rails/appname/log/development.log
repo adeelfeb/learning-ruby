@@ -11607,3 +11607,204 @@ Processing by PublicController#homepage as HTML
 Completed 200 OK in 15ms (Views: 8.2ms | ActiveRecord: 1.2ms (6 queries, 1 cached) | GC: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2025-07-11 18:01:55 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:13
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 13.4ms | GC: 0.0ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 2.0ms | GC: 0.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 41.5ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | GC: 0.0ms)
+Completed 200 OK in 69ms (Views: 42.2ms | ActiveRecord: 8.1ms (6 queries, 1 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-07-11 18:01:55 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-11 18:14:54 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:13
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:14
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 13.3ms | GC: 0.6ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.9ms | GC: 0.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 76.5ms | GC: 33.1ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 82.9ms | GC: 33.9ms)
+Completed 200 OK in 109ms (Views: 69.4ms | ActiveRecord: 15.1ms (6 queries, 1 cached) | GC: 35.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-11 18:14:55 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:13
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:14
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 2.0ms | GC: 0.0ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 2.6ms | GC: 0.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  [1m[36mPost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 9.8ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 9.5ms | ActiveRecord: 1.3ms (6 queries, 1 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-11 18:14:55 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:13
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 8.2ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 8.4ms | ActiveRecord: 1.1ms (6 queries, 1 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-11 18:14:55 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:13
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 2.4ms | GC: 0.0ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 2.5ms | GC: 0.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  [1m[36mPost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 10.0ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 9.8ms | ActiveRecord: 1.2ms (6 queries, 1 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-11 18:14:55 +0500
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:13
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 2.0ms | GC: 0.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.7ms | GC: 0.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  [1m[36mPost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 8.9ms | GC: 0.0ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 8.9ms | ActiveRecord: 1.2ms (6 queries, 1 cached) | GC: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7888518507772974855) /*application='Appname'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Appname'*/[0m
+Migrating to DeviseCreateUsers (20250711131517)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Appname'*/[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Appname'*/[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email") /*application='Appname'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token") /*application='Appname'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250711131517') RETURNING "version" /*application='Appname'*/[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT /*application='Appname'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7888518507772974855) /*application='Appname'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-07-11 18:15:34 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Appname'*/[0m
+Processing by PublicController#homepage as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering public/homepage.html.erb within layouts/application
+  [1m[36mPost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:13
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/views/public/homepage.html.erb:14
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 13.8ms | GC: 0.6ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1 /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 2.0ms | GC: 0.1ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  ↳ app/helpers/posts_helper.rb:4:in `post_meta'
+  Rendered posts/_post.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  [1m[36mPost Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" /*action='homepage',application='Appname',controller='public'*/[0m
+  ↳ app/models/post.rb:18:in `total'
+  Rendered public/homepage.html.erb within layouts/application (Duration: 43.8ms | GC: 1.5ms)
+  Rendered layouts/_menu.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | GC: 1.5ms)
+Completed 200 OK in 101ms (Views: 42.2ms | ActiveRecord: 9.2ms (6 queries, 1 cached) | GC: 33.6ms)
+
+
