@@ -1,9 +1,7 @@
-<% content_for(:page_title, "Posts") %>
+<% page_title "Posts" %>
 
-<p style="color: green"><%= notice %></p>
-<h1> The total number of Posts are: <%= Post.total%></h1>
 
-<%= render @post %>
+ <%= render @post %>
 
 <div>
   <%= link_to "Edit this post", edit_post_path(@post) %> |

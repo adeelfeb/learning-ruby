@@ -1,25 +1,41 @@
 <% page_title "Home" %>
 
-<div class="container mt-4">
+<div class="container mt-5">
   <div class="row">
 
+    <!-- Posts Section -->
     <div class="col-md-8">
-      <h2>Posts</h2>
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary">📬 Latest Posts</h2>
+        <%= link_to "Create New Post", new_post_path, class: "btn btn-success btn-sm" %>
+      </div>
 
       <% if @posts.any? %>
         <% @posts.each do |post| %>
-          <div class="post mb-3">
-            <%= render partial: "posts/post", locals: { post: post } %>
+          <div class="mb-4">
+            <%= render post %> <!-- This should render _post.html.erb partial -->
           </div>
         <% end %>
       <% else %>
-        <p>No posts available yet. Check back soon!</p>
+        <div class="alert alert-info" role="alert">
+          No posts available yet. Check back soon!
+        </div>
       <% end %>
     </div>
 
+    <!-- Sidebar Section -->
     <div class="col-md-4">
-      <p class="h2">Extra Info</p>
-      <h3>The total Posts: <%= Post.total %></h3>
+      <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+          🧾 Extra Info
+        </div>
+        <div class="card-body">
+          <p class="lead">Total Posts:</p>
+          <h3 class="display-6"><%= Post.total %></h3>
+          <hr>
+          <p class="small text-muted">This data is dynamically updated.</p>
+        </div>
+      </div>
     </div>
 
   </div>

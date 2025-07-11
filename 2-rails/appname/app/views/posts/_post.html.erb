@@ -1,41 +1,37 @@
+<div id="<%= dom_id(post) %>" class="card mb-4 shadow-sm p-3 border rounded bg-body-tertiary">
 
+  <div class="card-body">
 
-<% if local_assigns[:post] %>
+    <h2 class="card-title text-primary">
+      <strong>Title:</strong> <%= post.title %>
+    </h2>
 
-<div id="<%= dom_id post %>">
-  <h2>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </h2>
+    <small class="text-muted d-block mb-2">
+      <%= post_meta post %>
+    </small>
 
-  <%= post_meta post %>
+    <h4 class="card-subtitle mb-2 text-secondary">
+      <strong>Summary:</strong> <%= post.summary %>
+    </h4>
 
-  <h3>
-    <strong>Summary:</strong>
-    <%= post.summary %>
-  </h3>
-
-  <p>
-    <strong>Body:</strong>
-    <%= simple_format post.body %>
-  </p>
-
-  <p>
-    <strong>Active:</strong>
-    <%= post.active %>
-  </p>
-
-  <p>
-      <strong>Created at:</strong>
-      <%= post.details %>
+    <p class="card-text">
+      <strong>Body:</strong><br>
+      <%= simple_format post.body %>
     </p>
 
-    <p>
-      <strong>Updated at:</strong>
-      <%= post.updated_at.strftime("%B %d, %Y") %>
+    <p class="card-text">
+      <strong>Active:</strong> <%= post.active ? "Yes" : "No" %>
     </p>
 
+    <p class="card-text">
+      <strong>Updated at:</strong> <%= post.updated_at.strftime("%B %d, %Y") %>
+    </p>
+
+    <div class="d-flex justify-content-between mt-3">
+      <%= link_to "Edit", edit_post_path(post), class: "btn btn-sm btn-outline-primary" %>
+      <%= link_to "Back", posts_path, class: "btn btn-sm btn-outline-secondary" %>
+      <%= button_to "Delete", post, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-outline-danger" %>
+    </div>
+
+  </div>
 </div>
-
-<% end %>
-
